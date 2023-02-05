@@ -187,15 +187,15 @@ section.success {
 }
 section.research {
     color: #fff;
-    background: #{{ site.color_1.primary }};
+    background: #{{ site.color.primary_res }};
 }
 section.award {
     color: #fff;
-    background: #{{ site.color_2.primary }};
+    background: #{{ site.color.primary_awa }};
 }
 section.publication {
     color: #fff;
-    background: #{{ site.color_3.primary }};
+    background: #{{ site.color.primary_pub }};
 }
 
 

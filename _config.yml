@@ -14,27 +14,13 @@ disqus_shortname: myshortname
 
 color:
   primary: 05a35f #80B3FF
+  primary_res: e2e3de # research
+  primary_awa: f1faeb # award
+  primary_pub: dfeff0 # award
   primary-rgb: "128,179,0" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
 
-color_1:
-  primary: e2e3de # Publication
-  primary-rgb: "128,179,0" 
-  secondary: 2c3e50 
-  secondary-dark: 233140 
-
-color_2:
-  primary: f1faeb # Award
-  primary-rgb: "128,179,0"
-  secondary: 2c3e50
-  secondary-dark: 233140
-
-color_3:
-  primary: dfeff0
-  primary-rgb: "128,179,0"
-  secondary: 2c3e50
-  secondary-dark: 233140
 
 
 
