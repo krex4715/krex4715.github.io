@@ -180,10 +180,27 @@ section h2 {
     font-size: 3em;
 }
 
+
 section.success {
     color: #fff;
     background: #{{ site.color.primary }};
 }
+section.research {
+    color: #fff;
+    background: #{{ site.color_1.primary }};
+}
+section.award {
+    color: #fff;
+    background: #{{ site.color_2.primary }};
+}
+section.publication {
+    color: #fff;
+    background: #{{ site.color_3.primary }};
+}
+
+
+
+
 
 @media(max-width:767px) {
     section {

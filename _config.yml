@@ -1,5 +1,5 @@
 # Site settings
-title: Krex.com
+title: Krex.cv
 email: ralwnsgus4715@gmail.com
 url: https://github.com/krex4715/krex4715.github.io/
 description: "AI Robot Engineer J.H. Kim Homepage"
@@ -11,11 +11,35 @@ meta_author: J. H. Kim
 disqus_shortname: myshortname
 
 # Color settings (hex-codes without the leading hash-tag)
+
 color:
-  primary: 18bc9c #80B3FF
+  primary: 05a35f #80B3FF
   primary-rgb: "128,179,0" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
   secondary-dark: 233140 #A2122F
+
+color_1:
+  primary: e2e3de # Publication
+  primary-rgb: "128,179,0" 
+  secondary: 2c3e50 
+  secondary-dark: 233140 
+
+color_2:
+  primary: f1faeb # Award
+  primary-rgb: "128,179,0"
+  secondary: 2c3e50
+  secondary-dark: 233140
+
+color_3:
+  primary: dfeff0
+  primary-rgb: "128,179,0"
+  secondary: 2c3e50
+  secondary-dark: 233140
+
+
+
+
+
 
 # Footer settings
 footer:
