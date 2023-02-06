@@ -5,9 +5,11 @@ modal-id: 2
 date: 2014-07-17
 img: img2.png
 alt: image-alt
-project-date: April 2014
+project-date: 21.06 ~ 22.06
 client: Start Bootstrap
 category: Web Development
 thumbnail_text: Stewart-Gough Platform Impedance Control Project
-description: Use this area of the page to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.
 ---
+Explanation for Impedance control
+
+<img src="img/posting/impedance_control_structure.png">
