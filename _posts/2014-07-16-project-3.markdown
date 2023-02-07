@@ -19,4 +19,9 @@ Explanation~~
 </video>
 
 
+<video class="video" autoplay muted controls>
+    <source type="video/mp4" src="img/video/opt2.mp4" >
+</video>
+
+
 blabla
