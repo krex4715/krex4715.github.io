@@ -108,7 +108,6 @@ All data for creating the Random Forest model was collected directly by recordin
 - Publication: [Pose for Metaverse awarded and presented at ICROS'22](http://sigongji22a.icros.org/admin/proceedings/TableOfContents_web.asp)<br>
 
 <img src="img/posting/posting_metaverse/presentation.JPG" style="width:80%;"><br>
-<img src="img/posting/posting_metaverse/yoroke_amongus.jpg" style="width:30%;"><br>
 <br><br><br><br><br>
 
 ***
