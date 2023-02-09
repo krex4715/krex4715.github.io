@@ -10,10 +10,9 @@ thumbnail_text: Development of Pose Classification Technology for AI Metabus Exe
 ---
 
 
-<p style="font-size: 30px; color: rgb(25, 22, 150)"> <i class="far fa-comment-alt" aria-hidden="true"></i>&nbsp; Introduction </p>
-
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-glasses"></i>&nbsp; Introduction </p>
 <br>
-<p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-exclamation-circle" aria-hidden="true"></i>&nbsp; What Problem do we want to Solve? </p>
+<p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; What Problem do we want to Solve? </p>
 Virtual reality for fitness and health care applications require accurate and real-time pose estimation for interactive features. <br><br> 
 
 Yet, they suffer either a limited angle of view when using handset devices such as smartphones and VR gears for capturing human pose or a limited input interfaces when using distant imaging/computing devices such as Kinect. <br><br>
@@ -38,8 +37,19 @@ The embedded platform NVIDIA Jetson Xavier and camera devices are integrated int
 
 
 
-<p style="font-size: 30px; color: rgb(25, 22, 150)"> <i class="fas fa-laptop-code" aria-hidden="true"></i>&nbsp; AI Part </p>
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-laptop-code" aria-hidden="true"></i> AI Part </p>
+
+I was in charge of the AI part in this project.<br>
+My goal was to predict 2D Skeleton information using a 2D camera, <br>and map it to a 3D marker.<br>
+
+The whole process is illustrated as follows.
+
 <img src="img/posting/posting_metaverse/aipart1.png"><br>
+
+
+
+
+<p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa-solid fa-person"></i>&nbsp; Pose Estimation </p>
 
 
 
