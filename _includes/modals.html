@@ -16,9 +16,10 @@
             <p align="center" style="font-size: 30px;"><strong>{{ post.title }}</strong></p>
 
 
-            <img src="img/posting/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
-
+            <img src="img/posting/{{ post.headimg }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+            <html>
             {{ post.content }}
+            </html>
             
             <ul align="right" class="list-inline item-details">
               {% if post.project-date %}
