@@ -1,13 +1,14 @@
 ---
 layout: default
 title: <i class="fas fa-walking"></i>&nbsp;Development of Pose Classification Technology <br> for AI Metabus Exercise Platform
-modal-id: 1
+modal-id: 3
 date: 2014-07-18
 img: Capstone.JPG
 headimg: img_metaverse.png
 alt: image-alt
 project-date: 22.01 ~ 22.06
-thumbnail_text: Development of Pose Estimation for AI Metabus Exercise Platform <br>(Capstone Design awarded)
+category: past
+thumbnail_text: Development of Pose Estimation for AI Metabus Exercise Platform <br>(Capstone Design Awarded)
 ---
 
 ***
@@ -101,7 +102,7 @@ All data for creating the Random Forest model was collected directly by recordin
 
 ***
 
-<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Outcome</p>
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Reward</p>
 - 2022 Hanyang Capstone Design Fair . Gold Medal (금상) (학과 1위, 공학대학 전체2위)
 <img src="img/posting/posting_metaverse/capstone_award.png" style="width:80%;"><br>
 - 2022 Shared AI-Robotics Education 88 Robot Day [SHARE Challenge Bronze Medal](https://gleaming-bar-4ea.notion.site/5eea5ed024054097adf788b62ef08ef2) (동상) <br>
