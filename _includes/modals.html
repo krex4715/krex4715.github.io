@@ -15,8 +15,9 @@
           <div align="left" class="modal-body">
             <p align="center" style="font-size: 30px;"><strong>{{ post.title }}</strong></p>
 
-
-            <img src="img/posting/{{ post.headimg }}" class="img-responsive img-centered">
+            {% if post.headimg %}
+            <img src="img/posting/head_img/{{ post.headimg }}" class="img-responsive img-centered">
+            {% endif %}
             <html>
             {{ post.content }}
             </html>
