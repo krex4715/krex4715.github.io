@@ -46,14 +46,14 @@ It has the advantage of having <u>a very high carrying load (high robustness),</
 <img src="img/posting/posting_stewart/impedance_control_eq.png" style="height: 100%; width: 100%;">
 
 Impedance control is a method of robot control that considers the interaction between the robot and the environment.<br>
-This method measures the differences in Actual % Desired Values of q'',q',q (q-set) generated during the interaction between the robot and the environment, and adjusts the robot's motion accordingly.
+This method measures the differences in Actual & Desired Values of q'',q',q (q-set) generated during the interaction between the robot and the environment, and adjusts the robot's motion accordingly.
 <br>
 q-set can be Cartesian Space Variable, and also Joint Space Variable.<br>
 <br>
 
 <img src="img/posting/posting_stewart/stewart_virtual.png" style="height: 80%; width: 80%;"><br>
 The control method I applied was in Cartesian Space.
-Therefore, it was my goal to implement a system that would force the virtual Spring, Damper to power against differences in the Desired qset of the End-Effector.<br><br>
+Therefore, it was my goal to implement a system that would force the virtual Spring, Damper to power against differences in the Desired Q-set of the End-Effector.<br><br>
 
 
 
