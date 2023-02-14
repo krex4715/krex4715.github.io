@@ -6,7 +6,7 @@ date: 2021-12-31
 img: optimal_wheel.png
 
 alt: image-alt
-project-date: April 2014
+project-date: 2nd semester project for 3rd year of bachelor course
 category: bachelor
 thumbnail_text: (ICPBL) vehicle Wheel Optimal Design
 ---

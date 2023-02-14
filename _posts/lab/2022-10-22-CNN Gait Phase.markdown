@@ -1,13 +1,14 @@
 ---
 layout: default
 modal-id: 101
-title: <i class="fas fa-laptop-code"></i>&nbsp; Development of the CNN Model for GAIT Phase Recognition
+title: <i class="fas fa-laptop-code"></i>&nbsp; Development of the CNN Model for robust GAIT Phase Recognition & Terrain Recognition
 date: 2023-02-01
-img: gaitphase.png
+img: gaitphase.gif
+headimg: gaitphase.png
 alt: image-alt
-project-date: April 2014
+project-date: 2022-06-01 ~ 2022-10-01
 category: lab
-thumbnail_text: CNN Model for GAIT Phase Recognition
+thumbnail_text: CNN Model for the robust GAIT Phase Recognition & Terrain Recognition
 ---
 
 
@@ -22,12 +23,6 @@ thumbnail_text: CNN Model for GAIT Phase Recognition
 
 
 <video class="video" autoplay muted controls style="width:70%;">
-    <source type="video/mp4" src="img/video/opt1.mp4" >
+    <source type="video/mp4" src="img/posting/posting_cnngait/terrain_gait_phase_recognition.mp4" >
 </video>
-
-
-<video class="video" autoplay muted controls style="width:70%;">
-    <source type="video/mp4" src="img/video/opt2.mp4" >
-</video>
-
 

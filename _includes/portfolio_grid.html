@@ -16,7 +16,7 @@
       {% if post.category == "lab" %}
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <p style="text-align:center; font-size: 18px;"><strong><i class="fa-solid fa-play"></i>&nbsp;{{ post.thumbnail_text }}</strong></p>
-          <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" style="display: block; margin: 0 auto;" alt="{{ post.alt }}">
         </a>
       
       {% endif %}
@@ -37,7 +37,7 @@
       {% if post.category == "bachelor" %}
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <p style="text-align:center; font-size: 18px;"><strong><i class="fa-solid fa-play"></i>&nbsp;{{ post.thumbnail_text }}</strong></p>
-          <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" style="display: block; margin: 0 auto;" alt="{{ post.alt }}">
         </a>
       
       {% endif %}

@@ -5,7 +5,7 @@ title: <i class="fa-solid fa-magnifying-glass"></i>&nbsp; (ICPBL) Detecting Anom
 date: 2021-12-30
 img: anomaly_ensemble.png
 alt: image-alt
-project-date: April 2014
+project-date: 2nd semester project for 3rd year of bachelor course
 category: bachelor
 thumbnail_text: (ICPBL) Producing the ML model that detect Detects Anomalies in Wafer Manufacturing
 ---

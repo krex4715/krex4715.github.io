@@ -3,7 +3,7 @@ layout: default
 modal-id: 103
 title: <i class="fas fa-clipboard-check"></i>&nbsp;Data Collection for Personalized Walking Augmentation Parameter Analysis
 date: 2023-02-01
-img: opt_datacollect.png
+img: opt_datacollect.gif
 headimg: img_lowerlimbexo_head.png
 alt: image-alt
 project-date: April 2014
@@ -23,12 +23,15 @@ thumbnail_text: Data Collection for Personalized Walking Augmentation Parameter 
 
 
 <video class="video" autoplay muted controls style="width:70%;">
-    <source type="video/mp4" src="img/video/opt1.mp4" >
+    <source type="video/mp4" src="img/posting/posting_datacollection/datacollection1.mp4" >
 </video>
 
 
 <video class="video" autoplay muted controls style="width:70%;">
-    <source type="video/mp4" src="img/video/opt2.mp4" >
+    <source type="video/mp4" src="img/posting/posting_datacollection/datacollection2.mp4" >
 </video>
 
 
+<video class="video" autoplay muted controls style="width:70%;">
+    <source type="video/mp4" src="img/posting/posting_datacollection/datacollection3.mp4" >
+</video>
