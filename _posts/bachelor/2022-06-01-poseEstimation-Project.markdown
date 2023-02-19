@@ -102,11 +102,17 @@ All data for creating the Random Forest model was collected directly by recordin
 
 ***
 
-<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Reward</p>
-- 2022 Hanyang Capstone Design Fair . Gold Medal (금상) (학과 1위, 공학대학 전체2위)
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Reward & Publication</p>
+
+
+
+● 2022 Hanyang Capstone Design Fair . Gold Medal (금상) (학과 1위, 공학대학 전체2위)<br>
+
 <img src="img/posting/posting_metaverse/capstone_award.png" style="width:80%;"><br>
-- 2022 Shared AI-Robotics Education 88 Robot Day [SHARE Challenge Bronze Medal](https://gleaming-bar-4ea.notion.site/5eea5ed024054097adf788b62ef08ef2) (동상) <br>
-- Publication: [Pose for Metaverse awarded and presented at ICROS'22](http://sigongji22a.icros.org/admin/proceedings/TableOfContents_web.asp)<br>
+
+● 2022 Shared AI-Robotics Education 88 Robot Day [SHARE Challenge Bronze Medal](https://gleaming-bar-4ea.notion.site/5eea5ed024054097adf788b62ef08ef2) (동상) <br>
+
+● Publication: [Pose for Metaverse awarded and presented at ICROS'22](http://sigongji22a.icros.org/admin/proceedings/TableOfContents_web.asp)<br>
 
 <img src="img/posting/posting_metaverse/presentation.JPG" style="width:80%;"><br>
 <br><br><br><br><br>

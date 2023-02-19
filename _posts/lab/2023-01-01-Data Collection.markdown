@@ -6,7 +6,7 @@ date: 2023-02-01
 img: opt_datacollect.gif
 headimg: img_lowerlimbexo_head.png
 alt: image-alt
-project-date: April 2014
+project-date: 2022.06 ~ Present
 category: lab
 thumbnail_text: Data Collection for Personalized Walking Augmentation Parameter Analysis
 ---

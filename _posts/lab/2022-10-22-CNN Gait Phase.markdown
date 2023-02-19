@@ -27,13 +27,16 @@ GAIT phase is a quantitative value between 0 and 100% of the walking stage.<br>
 <br>
 
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="far fa-lightbulb" aria-hidden="true"></i>&nbsp; Why is it Important? </p>
-For optimized gait control of the Exoskeletonr Robot, it is necessary to assist the appropriate magnitutde of the force at the correct timing.<br>
+For optimized gait control of the Exoskeleton Robot, it is necessary to assist the appropriate magnitutde of the force at the correct timing.<br>
 
 This requires Clarification of the walking stage in the current user's current walk so that the optimization algorithm can be applied appropriately.<br>
 
 <br>
 I developed a CNN model that Robustly judges this GAIT Phase regardless of Terrain, Walking Speed / Direction, and  environmental Change in data collection <br>
-with <u>a minimum number of IMUs</u>
+with <u>a minimum number of IMUs</u> (Only one IMU sensor on the thigh)
+
+<br>
+In the Future, I Plan to apply this algorithm to real Exoskeleton Robot
 
 <br>
 <br>
@@ -49,7 +52,7 @@ with <u>a minimum number of IMUs</u>
 <br>
 
 ***
-<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-laptop-code" aria-hidden="true"></i> CNN Model Implementation</p>
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fa fa-cogs" aria-hidden="true"></i> CNN Model Implementation</p>
 
 Convolutional Neural Network is an artificial neural network model using the characteristics of Convolution Kernel, which filters the characteristic distribution of data.<br>
 <br>
@@ -110,15 +113,44 @@ Mixmax scaling was performed so that it could respond robustly to this variances
 <img src="img/posting/posting_cnngait/ModelStructure.png" style="height: 80%; width: 80%">
 
 
-
-
-
-
-
-
+I made the model structure by referring to [LeNet](https://ieeexplore.ieee.org/abstract/document/726791), [VGGNet](https://arxiv.org/abs/1409.1556), [ResNet](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) which were created using Convolutional Kernel in the field of Computer Vision.<br>
 <br>
-○ Actual implementation
+All convolutional Kenels and pooling layers are one-dimensional filters, and the direction of the filter is 200 sample directions. That is, it is learned by downsampling data of 200 lengths per channel.<br>
+<br>
+The characteristics of the implemented model are as follows.
+<p style="font-size: 17px;" style="color: rgb(0, 60, 205);">
+● The basic block consists of Convolutional Kernel, BatchNormalization, and Activation Function.</p>
+
+<p style="font-size: 17px;" style="color: rgb(0, 60, 205);">
+● In the first two layers, Down Sampling was stronger than other layers by using a 2X1 pooling layer.</p>
+<p style="font-size: 17px;" style="color: rgb(0, 60, 205);">
+● Batchnormalization was put in each block to make learning faster.</p>
+<p style="font-size: 17px;" style="color: rgb(0, 60, 205);">
+● Only two FC layers and one activation function were used for the Output Layer ("Head" in Multitask Learning), and Each Output Layer (Head) is inserted to determine Terrain Recognition and Gaitphase Recognition.</p>
+
+
+
+
+***
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fa fa-eye" aria-hidden="true"></i> Actual implementation </p>
+<br>
+
+
+The Video Below is an Actual Implementation.
 <video class="video" autoplay muted controls style="width:70%;">
     <source type="video/mp4" src="img/posting/posting_cnngait/terrain_gait_phase_recognition.mp4" >
 </video>
 
+
+What you can See in this Video is that Terrain & GAIT Phase Recognition can be performed well <u>regardless of terrain change, direction of walking, walking speed in realtime.</u>
+<br>
+The left graph is gait Phase(0~100%), the right graph is Terrain(0: Levelground , 1: Ascent , 2: Descent)
+
+<br>
+
+***
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Publication</p>
+
+● Publication: [Development of the IMU Sensor Based GATE Phase Detection Algorithm that is Robust to Changes in Terrain and Walking Speed](https://drive.google.com/file/d/1p5hMve-M4tQ8fD1xHreyuUOgk3CVtTga/view)<br>
+
+<img src="img/posting/posting_cnngait/daegu_exco_kspe.png" style="width:80%;"><br>

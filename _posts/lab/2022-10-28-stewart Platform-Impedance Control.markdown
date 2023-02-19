@@ -161,7 +161,6 @@ forward kinematic problem is also presented.  ...
 <br><br>
 
 In the above paper, I borrowed Inverse Kinematics, Jacobian Mapping, and Inverse Dynamics.<br>
-***
 The expression that this controller wants to create is as follows.<br>
 <img src="img/posting/posting_stewart/impedance_control_eq2.png" style="height: 100%; width: 100%;">
 
@@ -180,9 +179,6 @@ Impedance Force only calculates Cartesian Force from the difference from Desired
 <img src="img/posting/posting_stewart/stewart_virtual.png" style="height: 80%; width: 80%;"><br>
 Later, the Joint Force following Desired Position Set can be obtained by multiplying Cartesian Force with Jacobian Mapping.<br>
 <img src="img/posting/posting_stewart/impedance_control_eq3.png" style="height: 70%; width: 70%;">
-
-***
-
 
 
 
