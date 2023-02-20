@@ -16,7 +16,11 @@
             <p align="center" style="font-size: 30px;"><strong>{{ post.title }}</strong></p>
             <br><br><br>
             {% if post.headimg %}
-            <img src="img/posting/head_img/{{ post.headimg }}" class="img-responsive img-centered">
+              {% if post.headimg_size %}
+                <img src="img/posting/head_img/{{ post.headimg }}" class="img-responsive img-centered" style="width: {{ post.headimg_size }}%; height: {{ post.headimg_size }}%;">
+              {% else %}
+                <img src="img/posting/head_img/{{ post.headimg }}" class="img-responsive img-centered">
+              {% endif %}
             {% endif %}
             <html>
             {{ post.content }}

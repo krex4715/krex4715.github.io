@@ -33,7 +33,7 @@ This requires Clarification of the walking stage in the current user's current w
 
 <br>
 I developed a CNN model that Robustly judges this GAIT Phase regardless of Terrain, Walking Speed / Direction, and  environmental Change in data collection <br>
-with <u>a minimum number of IMUs</u> (Only one IMU sensor on the thigh)
+with <u>a minimum number of IMUs</u> (Only one IMU sensor used on the thigh)
 
 <br>
 In the Future, I Plan to apply this algorithm to real Exoskeleton Robot

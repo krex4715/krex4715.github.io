@@ -129,7 +129,7 @@ Here, optimization was carried out for the <u>the weight(w1,w2,w3) and threshold
 
 The key criteria for selecting the final model are AUC and Recall values.<br>
 
-Due to the nature of the task, I thought that it was the most fatal situation to judge that there was no problem even though there is a defect, so I trained the model to reduce the False Negative (FN) as much as possible even if the Accuracy and Precision score values could decrease.
+Due to the nature of the task, I judged that the most fatal case was the situation in which the model judged that there was no problem even though the product was defective. So even if Accuracy and Precision score fall, I chose the model to reduce False Negative (FN) as much as possible.
 
 <img src="img/posting/posting_anomaly/performance.png" style="height: 70%; width: 70%;">
 
