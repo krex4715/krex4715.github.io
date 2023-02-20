@@ -25,7 +25,7 @@ At the end of the First Semester of second grade course, I did some challenge on
 >[https://www.kaggle.com/datasets/arbazkhan971/anomaly-detection](https://www.kaggle.com/datasets/arbazkhan971/anomaly-detection)
 
 <br>
-It was to make an ML model to judge defective products in the water manufacturing process.<br>
+It was to make an Binary Classifier to judge defective products in the water manufacturing process by using machine learning models.<br>
 <br>
 
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fas fa-lightbulb" aria-hidden="true"></i>&nbsp; characteristics of the Dataset </p>
@@ -53,16 +53,16 @@ Because the company's process is confidential, it does not disclose what the dat
 
 <p style="font-size: 20px; color: rgb(25, 22, 150)"> <i class="fa-solid fa-play"></i>
 &nbsp; Feature Selection </p>
-Because the number of data features was too large and the information could not be known, proper visualization and analysis of the data was impossible.<br>
+Because the number of data features was too large and the feature information could not be known, proper visualization and analysis of the data was impossible.<br>
 <br>
-Even if the EDA process is omitted, I wanted to determine which Feature Set is the most influential Feature Set for learning and remove the Feature Set that is not influential or adversely affecting learning from learning.<br>
+Even if the EDA process is omitted, I wanted to determine which Feature Set is the most influential Feature Set for learning and remove the Feature Set that is not or bad influential on learning.<br>
 <br>
 While looking for ways to select the Feature Set properly, I was able to find the [Wrapper Method](https://wooono.tistory.com/249).
 
 
 <img src="img/posting/posting_anomaly/wrapper.png" style="height: 70%; width: 70%;">
 
-The Wrapper method is the method of extracting the Feature subset that performs best in terms of predictive accuracy.<br>
+The Wrapper method is the method of extracting the best fature subset of model.<br>
 In other words, it refers to a method of learning all Feature Set combinations one by one to find which Feature Set combination is the most effective for learning.
 
 
@@ -74,43 +74,63 @@ It starts with no feature, adding the most important feature every time it is re
 - Backward Wrapper Method:
 Start with all features, remove the least important features one by one, and repeat until there is no further improvement in performance.
 
-
+Among them, I chose the forward wrapper method.
 
 <br><br>
 
 <p style="font-size: 20px; color: rgb(25, 22, 150)"> <i class="fa-solid fa-play"></i>
 &nbsp; Ensemble Learning </p>
-Ensemble refers to the combination of several weak classifiers to create a strong classifier. The data entering each classifier in the ensemble must be different dataset.
+Ensemble Learning refers to the combination of several weak classifiers to create a strong classifier. The data entering each classifier in the ensemble must be different dataset.<br>
+(Here, techniques such as Bagging and Pasting are used to determine how different datasets are determined.)
 
-Here, if different datasets were put differently for <u>Record</u>, there was a concern that the performance of Classifier would be greatly degraded due to the insufficient number of datasets.
+but, if different datasets were put differently for <u>Record</u>, there was a concern that the performance of Classifier would be greatly degraded due to the insufficient number of datasets.
 
-In order to prevent this problem, we considered putting differently in each model for <u>Feature</u>, (not Record) based on the fact that this dataset is Highly imbalanced.
+In order to prevent this problem, I considered putting differently for <u>Feature(not Record)</u> in each model, based on the fact that this dataset is Highly imbalanced.
 
 At this time, the Forward Wrapper method was applied to each learner in order to put most optimal featureset in each Weak Classifier.
 
 
 The forward wrapper method is a Feature Selection method that returns the most suitable feature combination for the Model among all possible feature combinations.<br>
+(This method has the disadvantage of taking a very long time because it is a method of finding the most optimal combination by comparing the number of cases one by one.)
 
-This method has the disadvantage of taking a very long time because it is a method of finding the most optimal combination by comparing the number of cases one by one.
-
-After calculating the wrapper for each classifier from the outside, I sellected the most optimal feature for each classifier and learned the model.
+After calculating the wrapper for each classifier, I sellected the most optimal feature for each classifier and learned the model.
 
 <img src="img/posting/posting_anomaly/ensemble.png" style="height: 70%; width: 70%;">
 
 
 Among the learned ML models selected in this way, I selected the three Weak Classifiers that performed the best performance.<br>
-<br>
-Naive Bayesian and KNN, and Light GBM<br>
+
+
+- [Naive Bayesian](https://scikit-learn.org/stable/modules/naive_bayes.html)
+- [KNN](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+- [Light GBM](https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMModel.html)
+
 (All models are implemented with [scikit-Learn](https://scikit-learn.org/stable/) package)
 
 
+<br><br>
+<p style="font-size: 20px; color: rgb(25, 22, 150)"> <i class="fa-solid fa-play"></i>
+&nbsp; Voting Method</p>
+<br>
+Generally, types of Voting include Hard Voting, Soft Voting, Weighted Voting.
+<img src="img/posting/posting_anomaly/model_ensemble.png" style="height: 70%; width: 70%;">
 
+The method I chose here is Weighted Voting.<br>
+I multiplied the probability value of the each weak classifier by weight and divided the total value by threshold.<br>
+<br>
+Here, optimization was carried out for the <u>the weight(w1,w2,w3) and threshold values</u> to have the best performance through grid search for 10 random seed values.<br>
+(It took a very long time.....)
+
+<br><br><br>
 
 
 ***
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-check"></i>&nbsp; Performance Evaluation </p>
 
+The key criteria for selecting the final model are AUC and Recall values.<br>
 
+Due to the nature of the task, I thought that it was the most fatal situation to judge that there was no problem even though there is a defect, so I trained the model to reduce the False Negative (FN) as much as possible even if the Accuracy and Precision score values could decrease.
 
+<img src="img/posting/posting_anomaly/performance.png" style="height: 70%; width: 70%;">
 
-
+The figure above shows the performance index of the Enseamble model with the best performance, and it could be seen that the Recall and AUC scores for Threshold were the highest.
