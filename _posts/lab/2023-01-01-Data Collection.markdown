@@ -52,7 +52,7 @@ To do this, I am collecting data to develop AI models that robustly judge even w
 
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-wrench" aria-hidden="true"></i>
 &nbsp; Sensor Equipments </p>
-When collecting data, the following Six sensor equipment were used.
+When collecting data, the following Five sensor equipment were used.
 
 <div class="wrap_five">
     <a href="https://optitrack.com/">
@@ -65,8 +65,6 @@ When collecting data, the following Six sensor equipment were used.
     <img src="img/posting/posting_datacollection/delsys_logo.png" style="height: 70%; width: 70%;"></a>
     <a href="https://www.amti.biz/">
     <img src="img/posting/posting_datacollection/AMTI_logo.png" style="height: 70%; width: 70%;"></a>
-    <a href="https://www.anybodytech.com/">
-    <img src="img/posting/posting_datacollection/anybody_logo.png" style="height: 70%; width: 70%;"></a>
 </div>
 
 <br>    
@@ -78,7 +76,6 @@ When collecting data, the following Six sensor equipment were used.
 - Xsens mtw Awinda : Wireless IMU Sensor
 - Delsys EMG Trigno: Electromyography
 - AMTI Force Plate : Calculation of ground reaction force more accurately
-- Anybody Motion Analysis S/W : Human Dynamic Modeling-based motion analysis software
 
 
 What I had to do here was to synchronize and Integrate all the data of the Equipments above.<br>
@@ -116,21 +113,81 @@ I was able to communicate between sensors through two methods:
 
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-download" aria-hidden="true"></i>
 &nbsp; Data Extraction </p>
-The data informations to collect are EMG Sensor signal, Optitrack Marker data, Force Plate data, and IMU Sensor's Raw Sensor data.<br>
+The data informations I want to collet are EMG signal, Optitrack Marker data, Force Plate, and IMU Sensor's Raw Sensor data.<br>
 
 <br>
-Force Plate, Optitrack Marker, and EMG signals, excluding IMU, were compatible with the Motive software, allowing synchronized signals to be received without any problems.<br>
+Force Plate, Optitrack Marker, and EMG signals, excluding IMU, were compatible with the Motive software.
 <br>
-One problem here was that getting IMU raw sensor values was hard with the Xsens Analyzer software.<br>
-The values that the software sent were not raw values, but values that were calculated in some way. 
-(Exporting, not real-time transmission, allows me to see the Sensor Raw value, but even this contains a gravity compensation calculation)
+Xsens Analyzer, a software dedicated to Xsens IMU, can communicate through Motive and Esync. but One problem here was that getting IMU raw sensor values was hard with the Xsens Analyzer software.<br>
+The values that the Analyzer software sent were not raw values, but values that were calculated in some way. 
 
 - ref: [https://base.xsens.com/s/article/Output-Parameters-in-MVN-1611927767477?language=en_US](https://base.xsens.com/s/article/Output-Parameters-in-MVN-1611927767477?language=en_US)
 
+
+The only way to collect IMU Raw Sensor Signal was to collect it from ROS via TCP IP communication.
+<br>
+<br>
 <br>
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fas fa-lightbulb" aria-hidden="true"></i>&nbsp; Synchronizer </p>
+Force Plate, EMG, and Optitrack Marker information excluding IMU can be collected in motive.<br>
+Optitrack Marker, EMG, and IMU information excluding Force Plate can be collected in ROS.<br>
+<br>
+and
+the data I want to collect was EMG signal, Optitrack Marker data, Force Plate, and IMU Sensor's Raw Sensor data.
 
-So the idea I came up with was to use FSR Insole sensor.
+<br>
+for this, I came up with an idea that use FSR Insole sensor.<br>
 <img src="img/posting/posting_datacollection/synchronizer_picture.png" style="height: 100%; width: 100%;">
+<img src="img/posting/posting_datacollection/synchronize.png" style="height: 60%; width: 60%;">
+
+If the Insole FSR sensor is placed on the Force Sensor and stepped on it, the signal is transmitted at the same time, so it is possible to determine at which moment it is the simultaneous point.
+
+<img src="img/posting/posting_datacollection/FSR_forceplate.png" style="height: 100%; width: 100%;">
+
+<br>
+<br>
 
 
+
+<p style="font-size: 20px;"> <i class="fa fa-object-group" aria-hidden="true"></i>
+&nbsp; Development of the Synchronization GUI Program  </p>
+
+I developed a GUI program that synchronizes data collected from Motive with data collected from ROS.<br>
+<br>
+The GUI program I developed made it easier for fellow researchers who are not familiar with programming to process data that can be complicated.
+
+<video class="video" autoplay muted controls style="width:100%;">
+    <source type="video/mp4" src="img/posting/posting_datacollection/gui1.mp4" >
+</video>
+
+<video class="video" autoplay muted controls style="width:100%;">
+    <source type="video/mp4" src="img/posting/posting_datacollection/gui2.mp4" >
+</video>
+
+<br>
+<br>
+<p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-refresh" aria-hidden="true"></i>&nbsp; Experiment Protocol </p>
+
+I collected the GAIT data on 15 subjects according to terrain & speed condotions.
+
+- Terrain: 
+    - Levelground Walk
+    - Stair Ascent / Descent
+    - Ramp Ascent / Descent
+- Speed:
+    - in case of Levelground : 70, 90, 110, 130 BPM
+    - in case of Ramp, Stair : 70, 90, 100 BPM
+
+All Subjects walk along the Metronome BPM Sounds.
+
+
+***
+
+
+<video class="video" autoplay muted controls style="width:100%;">
+    <source type="video/mp4" src="img/posting/posting_datacollection/datacollecting_video.mp4" >
+</video>
+
+<video class="video" autoplay muted controls style="width:100%;">
+    <source type="video/mp4" src="img/posting/posting_datacollection/datacollection1.mp4" >
+</video>
