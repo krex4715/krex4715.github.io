@@ -142,7 +142,7 @@ The Video Below is an Actual Implementation.
 </video>
 
 
-What you can See in this Video is that Terrain & GAIT Phase Recognition can be performed well <u>regardless of terrain change, direction of walking, walking speed in realtime.</u>
+What you can See in this Video is that Terrain & GAIT Phase Recognition can be performed well <u>regardless of terrain change, direction of walking, walking speed in realtime, using only One IMU sensor on thigh</u>
 <br>
 The left graph is gait Phase(0~100%), the right graph is Terrain(0: Levelground , 1: Ascent , 2: Descent)
 

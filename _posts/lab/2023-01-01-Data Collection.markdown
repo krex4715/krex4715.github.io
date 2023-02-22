@@ -154,7 +154,7 @@ If the Insole FSR sensor is placed on the Force Sensor and stepped on it, the si
 
 I developed a GUI program that synchronizes data collected from Motive with data collected from ROS.<br>
 <br>
-The GUI program I developed made it easier for fellow researchers who are not familiar with programming to process data that can be complicated.
+The GUI program I developed made it easier for fellow researchers who are not familiar with programming to be able to do data processing that can be complicated.
 
 <video class="video" autoplay muted controls style="width:100%;">
     <source type="video/mp4" src="img/posting/posting_datacollection/gui1.mp4" >
