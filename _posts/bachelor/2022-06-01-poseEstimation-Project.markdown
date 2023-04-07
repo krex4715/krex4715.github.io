@@ -3,10 +3,10 @@ layout: default
 title: <i class="fas fa-walking"></i>&nbsp;Development of Pose Classification Technology <br> for AI Metabus Exercise Platform
 modal-id: 4
 date: 2022-06-01
-img: Capstone.JPG
+img: 3dposetracking.gif
 headimg: img_metaverse.png
 alt: image-alt
-project-date: 22.01 ~ 22.06
+project-date: 22.01 ~ 22.06 (Graduation work)
 category: bachelor
 thumbnail_text: Pose Estimation for AI Metabus Exercise Platform (Capstone Design Awarded)
 ---
@@ -102,11 +102,17 @@ All data for creating the Random Forest model was collected directly by recordin
 
 ***
 
-<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Reward</p>
-- 2022 Hanyang Capstone Design Fair . Gold Medal (금상) (학과 1위, 공학대학 전체2위)
+<p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Reward & Publication</p>
+
+
+
+● 2022 Hanyang Capstone Design Fair . Gold Medal (금상) (학과 1위, 공학대학 전체2위)<br>
+
 <img src="img/posting/posting_metaverse/capstone_award.png" style="width:80%;"><br>
-- 2022 Shared AI-Robotics Education 88 Robot Day [SHARE Challenge Bronze Medal](https://gleaming-bar-4ea.notion.site/5eea5ed024054097adf788b62ef08ef2) (동상) <br>
-- Publication: [Pose for Metaverse awarded and presented at ICROS'22](http://sigongji22a.icros.org/admin/proceedings/TableOfContents_web.asp)<br>
+
+● 2022 Shared AI-Robotics Education 88 Robot Day [SHARE Challenge Bronze Medal](https://gleaming-bar-4ea.notion.site/5eea5ed024054097adf788b62ef08ef2) (동상) <br>
+
+● Publication: [Pose for Metaverse awarded and presented at ICROS'22](http://sigongji22a.icros.org/admin/proceedings/TableOfContents_web.asp)<br>
 
 <img src="img/posting/posting_metaverse/presentation.JPG" style="width:80%;"><br>
 <br><br><br><br><br>

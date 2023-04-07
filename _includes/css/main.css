@@ -507,3 +507,13 @@ footer .footer-below {
     grid-gap: 10px;
     grid-row-gap: 80px;
 }
+
+
+
+
+.wrap_five {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    grid-row-gap: 5px;
+}

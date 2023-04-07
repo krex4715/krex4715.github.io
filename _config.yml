@@ -1,5 +1,5 @@
 # Site settings
-title: Krex.cv
+title: krex.page
 email: ralwnsgus4715@gmail.com
 url: https://github.com/krex4715/krex4715.github.io/
 description: "AI Robot Engineer J.H. Kim Homepage"
@@ -34,10 +34,12 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: github
+  - title: fa-brands fa-fw fa-github
     url: http://github.com/krex4715
-  - title: blogger
+  - title: fa fa-bold
     url: https://roboharco12.tistory.com/
+  - title: fa-brands fa-fw fa-instagram
+    url: https://www.instagram.com/anvry_jh/
 
 
 # Build settings
