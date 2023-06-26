@@ -62,13 +62,13 @@ Using these characteristics, I thought that the convolutional kernel could filte
 
 
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa-solid fa-play"></i>
-&nbsp; Preprocessing </p>
+&nbsp; Input Pipelining Algorithm </p>
 Feature Sets that can be obtained from IMU sensors are Angular Velocity, Linear Acceleration, and Orientation(Quaternion).<br>
 
 Despite this limited information, I tried to proceed with the most optimal preprocessing for the model.<br>
 
 the entire Preprocessing Process is as follows.
-<img src="img/posting/posting_cnngait/preprocessing.png" style="height: 100%; width: 100%">
+<img src="img/posting/posting_cnngait/jh_research_inputpipelining.png" style="height: 100%; width: 100%">
 First, IMU data are stacked in order of arrival time, and cut by T seconds to make 2D information.<br>
 After that, up/down sampling is performed with 200 fixed records, and then the average filter and Min Max Normalization are performed.<br>
 
@@ -110,7 +110,7 @@ Mixmax scaling was performed so that it could respond robustly to this variances
 
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa-solid fa-play"></i>
 &nbsp; Model Structure </p>
-<img src="img/posting/posting_cnngait/ModelStructure.png" style="height: 80%; width: 80%">
+<img src="img/posting/posting_cnngait/jh_research_model_structure.png" style="height: 100%; width: 100%">
 
 
 I made the model structure by referring to [LeNet](https://ieeexplore.ieee.org/abstract/document/726791), [VGGNet](https://arxiv.org/abs/1409.1556), [ResNet](https://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html) which were created using Convolutional Kernel in the field of Computer Vision.<br>
@@ -137,20 +137,18 @@ The characteristics of the implemented model are as follows.
 
 
 The Video Below is an Actual Implementation.
-<video class="video" autoplay muted controls style="width:70%;">
-    <source type="video/mp4" src="img/posting/posting_cnngait/terrain_gait_phase_recognition.mp4" >
-</video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vQQiFxAiJ_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-What you can See in this Video is that Terrain & GAIT Phase Recognition can be performed well <u>regardless of terrain change, direction of walking, walking speed in realtime, using only One IMU sensor on thigh</u>
-<br>
-The left graph is gait Phase(0~100%), the right graph is Terrain(0: Levelground , 1: Ascent , 2: Descent)
-
-<br>
 
 ***
 <p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-award"></i>&nbsp; Publication</p>
 
-● Publication: [Development of the IMU Sensor Based GATE Phase Detection Algorithm that is Robust to Changes in Terrain and Walking Speed](https://drive.google.com/file/d/1p5hMve-M4tQ8fD1xHreyuUOgk3CVtTga/view)<br>
+● 2022 KSPE 한국정밀공학회 추계 학술대회<br> : [Development of the IMU Sensor Based GATE Phase Detection Algorithm that is Robust to Changes in Terrain and Walking Speed](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11168452)<br>   
+   
+   
+   
+● IEEE RO-MAN 2023, Busan<br> : Accepted , Presentation Scheduled for August 28-31
 
-<img src="img/posting/posting_cnngait/daegu_exco_kspe.png" style="width:80%;"><br>
+
+***
