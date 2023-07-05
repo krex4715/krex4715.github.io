@@ -1,14 +1,14 @@
 ---
 layout: default
 modal-id: 101
-title: <i class="fas fa-laptop-code"></i>&nbsp; Development of the CNN Model for robust GAIT Phase Recognition & Terrain Recognition
+title: <i class="fas fa-laptop-code"></i>&nbsp; Muktitask Learning for Multiple Recognition Tasks_ A Framnework for Lower-limb Exoskeleton Robot
 date: 2023-02-01
 img: gaitphase.gif
 headimg: gaitphase.png
 alt: image-alt
 project-date: 2022-06-01 ~ 2022-10-01
 category: lab
-thumbnail_text: CNN Model for the robust GAIT Phase Recognition & Terrain Recognition
+thumbnail_text: Muktitask Learning for Multiple Recognition Tasks
 ---
 
 
