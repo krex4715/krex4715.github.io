@@ -148,7 +148,7 @@ The Video Below is an Actual Implementation.
    
    
    
-● IEEE RO-MAN 2023, Busan<br> : Accepted , Presentation Scheduled for August 28-31
+● IEEE RO-MAN 2023, Busan<br> : Accepted , Presentation Scheduled for August 28-31,<a href="https://arxiv.org/abs/2306.14384"> Pre-released on arXiv</a><br>
 
 
 ***

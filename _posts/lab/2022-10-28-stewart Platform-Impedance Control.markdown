@@ -16,6 +16,14 @@ thumbnail_text: Stewart-Gough Platform Impedance Control Algorithm
 <br><br><br>   
 
 
+<img src="img/posting/stewart_temp.png" style="height: 100%; width: 100%;">
+
+
+
+
+
+
+
 ***
 <p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fas fa-glasses"></i>&nbsp; Introduction </p>
 <br>
