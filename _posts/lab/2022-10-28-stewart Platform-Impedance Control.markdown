@@ -15,8 +15,8 @@ thumbnail_text: Stewart-Gough Platform Impedance Control Algorithm
 
 <br><br><br>   
 
-
-<img src="img/posting/stewart_temp.png" style="height: 100%; width: 100%;">
+<!-- 
+<img src="img/posting/stewart_temp.png" style="height: 100%; width: 100%;"> -->
 
 
 
