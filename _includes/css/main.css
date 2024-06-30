@@ -185,6 +185,10 @@ section.success {
     color: #fff;
     background: #{{ site.color.primary }};
 }
+section.headline {
+    color: #110101;
+    background: #{{ site.color.primary_head}};
+}
 section.research {
     color: #fff;
     background: #{{ site.color.primary_res }};
@@ -504,8 +508,9 @@ footer .footer-below {
 .wrap {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-row-gap: 80px;
+    text-align: left;
 }
 
 

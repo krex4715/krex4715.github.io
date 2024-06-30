@@ -1,14 +1,14 @@
 ---
 layout: default
 modal-id: 1
-title: <i class="fas fa-spider"></i>&nbsp; Fabrication of a Quadrupedal Spider Robot
+title: <i class="fas fa-spider"></i>&nbsp; Design & Control of a Quadrupedal Spider Robot 
 date: 2018-12-31
 img: fourlegrobot.gif
 headimg: spider.gif
 alt: image-alt
 project-date: 1st semester project for 2nd year of bachelor course
 category: bachelor
-thumbnail_text: Quadrupedal Spider Robot
+thumbnail_text: Quadrupedal Spider Robot <br >Design & Control
 ---
 
 

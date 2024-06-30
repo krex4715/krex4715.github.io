@@ -6,9 +6,9 @@ date: 2023-02-01
 img: gaitphase.gif
 headimg: gaitphase.png
 alt: image-alt
-project-date: 2022-06-01 ~ 2022-10-01
+project-date: 2022.06 ~ 2022.10
 category: lab
-thumbnail_text: Muktitask Learning for Multiple Recognition Tasks
+thumbnail_text: Muktitask Recognition Models <br>for Lower-limb Exoskeleton Robot
 ---
 
 
@@ -148,7 +148,7 @@ The Video Below is an Actual Implementation.
    
    
    
-● IEEE RO-MAN 2023, Busan<br> : Accepted , Presentation Scheduled for August 28-31,<a href="https://arxiv.org/abs/2306.14384"> Pre-released on arXiv</a><br>
+● IEEE RO-MAN 2023 : <a href="https://ieeexplore.ieee.org/document/10309384">Multitask Learning for Multiple Recognition Tasks: A Framework for Lower-limb Exoskeleton Robot Applications</a>,  <a href="https://arxiv.org/abs/2306.14384"> Pre-released on arXiv</a><br>
 
 
 ***

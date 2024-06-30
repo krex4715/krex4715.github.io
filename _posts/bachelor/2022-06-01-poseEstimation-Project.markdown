@@ -1,14 +1,14 @@
 ---
 layout: default
-title: <i class="fas fa-walking"></i>&nbsp;Development of Pose Classification Technology <br> for AI Metabus Exercise Platform
+title: <i class="fas fa-walking"></i>&nbsp;Development of Pose Estimation & Analysis <br> for AI Metabus Exercise Platform
 modal-id: 4
 date: 2022-06-01
 img: 3dposetracking.gif
 headimg: img_metaverse.png
 alt: image-alt
-project-date: 22.01 ~ 22.06 (Graduation work)
+project-date: 2022.01 ~ 2022.06 (Graduation work)
 category: bachelor
-thumbnail_text: Pose Estimation for AI Metabus Exercise Platform (Capstone Design Awarded)
+thumbnail_text: Pose estimation for AI Metabus Platform (Capstone Design Awarded)
 ---
 
 ***

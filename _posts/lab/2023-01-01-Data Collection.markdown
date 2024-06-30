@@ -1,15 +1,15 @@
 ---
 layout: default
 modal-id: 103
-title: <i class="fas fa-clipboard-check"></i>&nbsp;Data Collection for Personalized Walking Augmentation Parameter Analysis
+title: <i class="fas fa-clipboard-check"></i>&nbsp;Data Collection for Personalized Walking Assistance in Lower-Limb Exoskeleton Robot
 date: 2023-02-01
 img: opt_datacollect.gif
 headimg: opt_datacollection.gif
 headimg_size: 60
 alt: image-alt
-project-date: 2022.06 ~ Present
+project-date: 2022.06 ~ 2023.03
 category: lab
-thumbnail_text: Data Collection for Personalized Walking Augmentation Parameter Analysis
+thumbnail_text: Data Collection for Personalized Walking Assistance in Exoskeleton Robot
 ---
 
 
