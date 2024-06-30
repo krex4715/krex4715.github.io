@@ -22,7 +22,7 @@ thumbnail_text: Data Collection for Personalized Walking Assistance in Exoskelet
 <br>
 <p style="font-size: 24px; color: rgb(25, 22, 150)"> <i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp; Data collection for what? </p>
 
-I am participating in a [project](http://harco.hanyang.ac.kr/2022/04/28/project-voucher_iitp_gait_project.html) that optimally controls the lower-limb exoskeleton robot for personalization.<br>
+I participated in a [project](http://harco.hanyang.ac.kr/2022/04/28/project-voucher_iitp_gait_project.html) that optimally controls the lower-limb exoskeleton robot for personalization.<br>
 
 In general, human walking differs from person to person, and it shows various and irregular patterns even within an individual.<br>
 
