@@ -7,7 +7,7 @@ img: gaitphase.gif
 headimg: gaitphase.png
 alt: image-alt
 project-date: 2022.06 ~ 2022.10
-category: lab
+category: lab-recognition_analysis
 thumbnail_text: Muktitask Recognition Models <br>for Lower-limb Exoskeleton Robot
 ---
 

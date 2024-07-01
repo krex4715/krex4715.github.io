@@ -1,14 +1,14 @@
 ---
 layout: default
 modal-id: 201
-title: <i class="fas fa-clipboard-check"></i>&nbsp; 3D object detection framework based on 2D LiDAR
+title: <i class="fas fa-laptop-code"></i>&nbsp; 3D object detection framework based on 2D LiDAR
 date: 2023-02-01
 img: linc_lidar.gif
 headimg: linc_lidar_head.png
 headimg_size: 60
 alt: image-alt
 project-date: 2023.06 ~ 2024.01
-category: lab
+category: lab-recognition_analysis
 thumbnail_text: 3D object detection framework <br>based on 2D LiDAR
 ---
 
@@ -28,9 +28,5 @@ In this project, I was responsible for detecting human objects and drawing 3D bo
 <p style="font-size: 33px; color: rgb(25, 22, 150)"><i class="fa fa-eye" aria-hidden="true"></i> Implementation Video </p>
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0ccDCx7WnF4?si=c0S426JaBzYnbpJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-
 
 

@@ -8,7 +8,7 @@ headimg: opt_datacollection.gif
 headimg_size: 60
 alt: image-alt
 project-date: 2022.06 ~ 2023.03
-category: lab
+category: lab-datacollection
 thumbnail_text: Data Collection for Personalized Walking Assistance in Exoskeleton Robot
 ---
 

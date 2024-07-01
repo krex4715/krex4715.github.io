@@ -7,7 +7,7 @@ img: stewart.gif
 headimg: stewart.gif
 alt: image-alt
 project-date: 2021.06 ~ 2022.06
-category: lab
+category: lab-control
 thumbnail_text: Stewart-Gough Platform <br> Impedance Control Algorithm
 ---
 

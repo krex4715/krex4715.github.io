@@ -6,13 +6,21 @@
         <h3><p style="font-size: 30px; color: rgb(30, 51,71)"> <i class="fas fa-desktop"></i>&nbsp;&nbsp; Projects</p></h3><br><br>
       </div>
     </div>
+    
+    <br>
 
+    
+    
+    <p style="font-size: 28px; text-align: left; color: rgb(30, 51,71)"> <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Lab Projects</p>
+    <hr>
 
-    <p style="font-size: 20px; text-align: left; color: rgb(30, 51,71)"> <i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Lab Projects</p><br><br>
+   
+    <p style="font-size: 23px; text-align: left; color: rgb(30, 51,71)"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;Recognition & Analysis</p>
+
 
     <div class="wrap">
       {% for post in site.posts %}
-      {% if post.category == "lab" %}
+      {% if post.category == "lab-recognition_analysis" %}
         <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
           <p style="text-align:center; font-size: 16px; color: rgb(30, 51,71)"><strong><i class="fa-solid fa-play"></i>&nbsp;{{ post.thumbnail_text }}</strong></p>
           <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" style="display: block; margin: 0 auto;" alt="{{ post.alt }}">
@@ -22,11 +30,47 @@
       {% endif %}
       {% endfor %}
     </div>
+    <br><br><br>
+
+    <p style="font-size: 23px; text-align: left; color: rgb(30, 51,71)"><i class="fa-solid fa-database"></i>&nbsp;&nbsp;Data Collection</p>
+
+    <div class="wrap">
+      {% for post in site.posts %}
+      {% if post.category == "lab-datacollection" %}
+        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+          <p style="text-align:center; font-size: 16px; color: rgb(30, 51,71)"><strong><i class="fa-solid fa-play"></i>&nbsp;{{ post.thumbnail_text }}</strong></p>
+          <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" style="display: block; margin: 0 auto;" alt="{{ post.alt }}">
+          <div style="clear: both;"></div> <!-- 이 부분이 이미지와 텍스트 사이에 클리어링을 추가 -->
+          <p style="text-align:center; font-size: 12px; color: rgb(30, 51,71);">{{ post.project-date }}</p>
+        </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <br><br><br>
+
+    <p style="font-size: 23px; text-align: left; color: rgb(30, 51,71)"><i class="fa-solid fa-gear"></i>&nbsp;&nbsp;Control</p>
+
+    <div class="wrap">
+      {% for post in site.posts %}
+      {% if post.category == "lab-control" %}
+        <a href="#portfolioModal-{{ post.modal-id }}" class="portfolio-link" data-toggle="modal">
+          <p style="text-align:center; font-size: 16px; color: rgb(30, 51,71)"><strong><i class="fa-solid fa-play"></i>&nbsp;{{ post.thumbnail_text }}</strong></p>
+          <img src="img/posting/thumbnail_img/{{ post.img }}" class="img-responsive" style="display: block; margin: 0 auto;" alt="{{ post.alt }}">
+          <div style="clear: both;"></div> <!-- 이 부분이 이미지와 텍스트 사이에 클리어링을 추가 -->
+          <p style="text-align:center; font-size: 12px; color: rgb(30, 51,71);">{{ post.project-date }}</p>
+        </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <hr>
+    
     
     <br><br><br><br><br>
 
 
-    <p style="font-size: 20px; text-align: left; color: rgb(30, 51,71)"> <i class="far fa-paper-plane"></i>&nbsp;&nbsp;Undergraduate Projects</p><br><br>
+    <p style="font-size: 28px; text-align: left; color: rgb(30, 51,71)"> <i class="far fa-paper-plane"></i>&nbsp;&nbsp;Undergraduate Projects</p>
+    <hr>
+    <br><br>
 
     
 
@@ -42,6 +86,7 @@
       {% endif %}
       {% endfor %}
     </div>
+    <hr>
     
   </div>
 </section>
